@@ -1,1 +1,1 @@
-clock: python schedule.py
+web: python schedule.py
