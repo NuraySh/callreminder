@@ -9,7 +9,7 @@ aze = pytz.timezone('Asia/Baku')
 
 schedule = BlockingScheduler()
 
-trigger = OrTrigger([CronTrigger(day_of_week='mon-sun', hour='11', minute='05'),CronTrigger(day_of_week='mon-sun', hour='21', minute='15')])
+trigger = OrTrigger([CronTrigger(day_of_week='mon-sun', hour='11', minute='05'),CronTrigger(day_of_week='mon-sun', hour='21', minute='28')])
 
 
 schedule.add_job(callmsg, trigger, timezone=aze)
